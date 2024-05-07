@@ -1,0 +1,23 @@
+Title: Demystifying the Journey of a Web Request: From URL to Web Page
+
+Blog Post URL: **Will update soon**
+
+In the digital age, where we navigate the vast landscape of the internet with mere keystrokes, it's easy to overlook the intricate dance that occurs behind the scenes when we enter a URL into our browser's address bar. Today, let's embark on a journey from the moment we type "https://www.google.com" and hit Enter, unraveling the layers of technology that make this seemingly simple action possible.
+
+DNS Request:
+The journey begins with a Domain Name System (DNS) request. Our browser sends a query to a DNS resolver, typically provided by our Internet Service Provider (ISP) or a third-party service. This query translates the human-readable domain name "www.google.com" into its corresponding IP address, which is essential for identifying the destination server on the internet.
+TCP/IP:
+Armed with the IP address, our browser initiates a Transmission Control Protocol (TCP) connection to the server hosting the Google website. TCP ensures reliable and ordered delivery of data packets over the internet, establishing a connection between our device and the remote server.
+Firewall:
+As our TCP connection traverses the internet, it may encounter firewalls deployed by network administrators to protect against unauthorized access and malicious activities. Firewalls inspect incoming and outgoing traffic, enforcing security policies and filtering potentially harmful packets.
+HTTPS/SSL:
+In the era of cyber threats and privacy concerns, secure communication is paramount. Hypertext Transfer Protocol Secure (HTTPS) encrypts data exchanged between our browser and the web server, safeguarding sensitive information from eavesdroppers and ensuring the integrity of the communication. The SSL/TLS protocol, implemented through digital certificates, establishes the encrypted connection and verifies the authenticity of the server.
+Load-Balancer:
+Large-scale websites like Google employ load balancers to distribute incoming traffic across multiple servers, ensuring optimal performance and high availability. These intelligent devices monitor server health and allocate requests based on factors like server capacity and response times, effectively managing the load and preventing any single server from becoming overwhelmed.
+Web Server:
+Upon reaching the destination server, our request is intercepted by a web server—a specialized software responsible for processing HTTP requests and serving web pages to clients. The web server retrieves the requested resources, such as HTML files, images, and scripts, and sends them back to our browser for rendering.
+Application Server:
+In dynamic web applications, additional processing may be required beyond serving static content. Application servers host the logic and business rules of the application, executing server-side scripts, interacting with databases, and generating dynamic content tailored to the user's request.
+Database:
+Behind the scenes, our request may trigger interactions with a database—a repository for storing and retrieving structured data. Whether it's fetching search results, user profiles, or personalized recommendations, the application server communicates with the database to fulfill our request and deliver relevant information.
+In conclusion, the journey from typing "https://www.google.com" to witnessing the familiar search interface involves a symphony of technologies working seamlessly together. From DNS resolution to database queries, each step plays a crucial role in delivering the desired web experience to users worldwide. Understanding this intricate process not only deepens our appreciation for the marvels of modern technology but also empowers us to navigate the digital realm with confidence and curiosity.
