@@ -1,0 +1,60 @@
+DNS Resolution:
+
+The client (your browser) requests the IP address for www.google.com from a local DNS server.
+If the local DNS server doesn’t have the record cached, it queries an authoritative DNS server.
+The authoritative DNS server responds with the IP address for www.google.com.
+Request Hitting Server IP on Appropriate Port:
+
+The client sends an HTTP request to the resolved IP address on port 443 (HTTPS).
+Traffic Encryption:
+
+The HTTPS request is encrypted using SSL/TLS.
+Traffic Passing Through a Firewall:
+
+The encrypted request passes through a firewall which inspects the traffic for security purposes.
+Load Balancer:
+
+The request reaches a load balancer, which distributes the traffic among multiple web servers to ensure reliability and performance.
+Web Server Serving the Web Page:
+
+The load balancer forwards the request to an appropriate web server.
+Application Server Generating the Web Page:
+
+The web server communicates with an application server to generate the dynamic content of the web page.
+Database Request:
+
+The application server queries a database to fetch any required data to generate the web page content.
+Response Back to Client:
+
+The web server sends the generated web page back to the client over the encrypted HTTPS connection.
+Here’s a diagram to illustrate this flow:
+
+
+Detailed Diagram Description:
+DNS Resolution:
+
+Client → Local DNS Server → Authoritative DNS Server → Local DNS Server → Client
+Request Hitting Server IP on Appropriate Port:
+
+Client → HTTPS request to IP on port 443
+Traffic Encryption:
+
+HTTPS (encrypted with SSL/TLS)
+Traffic Passing Through a Firewall:
+
+Encrypted request → Firewall → Load Balancer
+Load Balancer:
+
+Load Balancer → Multiple Web Servers
+Web Server Serving the Web Page:
+
+Load Balancer → Chosen Web Server
+Application Server Generating the Web Page:
+
+Web Server → Application Server
+Database Request:
+
+Application Server → Database Server → Application Server
+Response Back to Client:
+
+Web Server → Client (over HTTPS)
